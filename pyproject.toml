@@ -34,4 +34,5 @@ black = "^22.3.0"
 pytest-cov = "^3.0.0"
 click = "^8.1.2"
 snakemake = "^7.5.0"
+demoji = "^1.1.0"
 

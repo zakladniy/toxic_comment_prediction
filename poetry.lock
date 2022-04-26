@@ -301,6 +301,17 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
+name = "demoji"
+version = "1.1.0"
+description = "Accurately remove and replace emojis in text strings"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+ujson = ["ujson"]
+
+[[package]]
 name = "docutils"
 version = "0.18.1"
 description = "Docutils -- Python Documentation Utilities"
@@ -1998,7 +2009,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.10"
-content-hash = "6859cf16776db83e15ff5f391222412e1d2412b5f3853a6c2b745953d98918a7"
+content-hash = "baeb16d3a6d79e02cbf72a4dbffc1c17f0f4e392a9a8f1857391b7409f1e9274"
 
 [metadata.files]
 appdirs = [
@@ -2273,6 +2284,10 @@ decorator = [
 defusedxml = [
     {file = "defusedxml-0.7.1-py2.py3-none-any.whl", hash = "sha256:a352e7e428770286cc899e2542b6cdaedb2b4953ff269a210103ec58f6198a61"},
     {file = "defusedxml-0.7.1.tar.gz", hash = "sha256:1bb3032db185915b62d7c6209c5a8792be6a32ab2fedacc84e01b52c51aa3e69"},
+]
+demoji = [
+    {file = "demoji-1.1.0-py3-none-any.whl", hash = "sha256:6d3256c909aea299e97fe984f827a2a060c2a8f8bfcbafa7ec9659967c5df50f"},
+    {file = "demoji-1.1.0.tar.gz", hash = "sha256:072efaeca725e6f63ab59d83abeb55b178842538ed9256455a82ebbd055ff216"},
 ]
 docutils = [
     {file = "docutils-0.18.1-py2.py3-none-any.whl", hash = "sha256:23010f129180089fbcd3bc08cfefccb3b890b0050e1ca00c867036e9d161b98c"},

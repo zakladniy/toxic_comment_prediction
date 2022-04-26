@@ -1,15 +1,16 @@
 rule all:
     input:
-        "data/raw/data_raw.txt",
+        "data/raw/dataset.txt",
         "data/interim/data_interim.csv",
+        "data/processed/data_clean.csv"
 
 rule process_data:
     input:
-        "data/raw/data_raw.txt"
+        "data/raw/dataset.txt"
     output:
         "data/interim/data_interim.csv"
     shell:
-        "python -m src.data.process_data {output}"
+        "python -m src.data.process_data {input} {output}"
 
 rule clean_data:
     input:

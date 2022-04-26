@@ -184,3 +184,5 @@ templates/
 upload_html_test.sh
 
 /data/raw/dataset.txt
+/data/interim/data_interim.csv
+/data/processed/data_clean.csv
