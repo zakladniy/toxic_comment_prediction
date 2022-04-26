@@ -1,18 +1,20 @@
 rule all:
     input:
-        "data/raw/data_raw.csv",
-        "data/interim/data_interim.csv"
+        "data/raw/data_raw.txt",
+        "data/interim/data_interim.csv",
 
-rule extract_data:
-    output:
-        "data/raw/data_raw.csv"
-    shell:
-        "python -m src.data.make_dataset {output}"
-
-rule transform_data:
+rule process_data:
     input:
-        "data/raw/data_raw.csv"
+        "data/raw/data_raw.txt"
     output:
         "data/interim/data_interim.csv"
     shell:
-        "python -m src.data.transform_dataset {input} {output}"
+        "python -m src.data.process_data {output}"
+
+rule clean_data:
+    input:
+        "data/interim/data_interim.csv"
+    output:
+        "data/processed/data_clean.csv"
+    shell:
+        "python -m src.data.clean_data {input} {output}"
