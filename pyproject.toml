@@ -1,0 +1,35 @@
+[build-system]
+build-backend = "poetry.masonry.api"
+requires = ["poetry>=1.0.5"]
+
+[tool.poetry]
+authors = ["zakladniy"]
+description = "Project with model and API for predict toxic comments"
+name = "toxic_comment_prediction"
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+fastapi = "^0.65.2"
+loguru = "^0.4.1"
+python = ">=3.8.0,<3.10"
+uvicorn = "^0.15.0"
+numpy = "^1.21.2"
+torch = { url = "https://download.pytorch.org/whl/cpu/torch-1.9.0%2Bcpu-cp39-cp39-linux_x86_64.whl" }
+transformers = "^4.9.2"
+pytest-asyncio = ">=0.14.0"
+pytest = "^6.2.4"
+gunicorn = "^20.1.0"
+uvloop = "^0.16.0"
+httptools = "^0.3.0"
+tqdm = "^4.62.3"
+scikit-learn = "^1.0.2"
+pandas = "^1.4.1"
+matplotlib = "^3.5.1"
+lime = "^0.2.0"
+shap = "^0.40.0"
+transformers-interpret = "^0.6.0"
+jupyter = "^1.0.0"
+black = "^22.3.0"
+pytest-cov = "^3.0.0"
+
